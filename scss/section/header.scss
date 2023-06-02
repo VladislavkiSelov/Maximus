@@ -1,0 +1,44 @@
+.header {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header_righ_box {
+        display: flex;
+    }
+
+    &>img {
+        display: block;
+        height: 50px;
+        width: auto;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 430px;
+        margin-right: 40px;
+
+        li {
+            font-size: $text_a;
+        }
+    }
+
+    .block_phone {
+        &>a {
+            font-size: $text_a;
+            color: $color_three;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        h4 {
+            padding-top: 10px;
+            font-size: $text_h4;
+            color: $color_four;
+        }
+    }
+}
