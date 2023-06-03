@@ -1,9 +1,13 @@
-.header {
+.wraper_header {
     padding-top: 10px;
     padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
 
     .header_righ_box {
         display: flex;

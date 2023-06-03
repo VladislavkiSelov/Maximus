@@ -1,0 +1,41 @@
+.main_top {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background:
+        // url(../img/bush_on_the_left.png) position/size(ширина/высота) no-repeat,
+        url(../img/bush_on_the_left.png) 0 100% / 10% auto no-repeat,
+        url(../img/bush_on_the_right.png) 100% 100% / 10% auto no-repeat,
+        url(../img/Clouds.png) 0 90% / 100% auto no-repeat,
+        url(../img/bird.png) 90% 20% / 10% auto no-repeat,
+        url(../img/Horse.png) 85% 80% / 35% auto no-repeat,
+        url(../img/Horse_small.png) 50% 80% / 10% auto no-repeat,
+        url(../img/barn.png) 25% 80% / 22% auto no-repeat,
+        url(../img/Trees_on_the_left.png) 0 75% / 20% auto no-repeat,
+        url(../img/background.png) 0 0 / cover no-repeat,
+}
+
+.main_top_text {
+    padding-top: 150px;
+
+    h1 {
+        font-family: $font-family-2;
+        font-weight: 700;
+        font-size: $text_h1;
+        width: 615px;
+        margin-bottom: 40px;
+    }
+
+    &>h2 {
+        font-family: $font-family-3;
+        font-weight: 400;
+        font-size: $text_h2;
+        width: 480px;
+        color: $color_four;
+        line-height: 1.4;
+        margin-bottom: 40px;
+    }
+}
