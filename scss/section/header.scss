@@ -129,3 +129,18 @@
         }
     }
 }
+
+
+@media (max-width:480px) {
+    .wraper_header {
+        .block_phone {
+            display: none;
+        }
+
+        .humburger {
+            left: auto;
+            right: 30px;
+        }
+
+    }
+}

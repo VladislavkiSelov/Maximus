@@ -1,0 +1,56 @@
+.modal_menu_box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    background: #0D0D0D;
+    opacity: 0.95;
+    z-index: 5;
+    padding: 20px;
+    padding-top: 50px;
+    .btn_close{
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        width: 24px;
+        height: 24px;
+        opacity: 0.2;
+        cursor: pointer;
+      transition: opacity ease 0.5s;
+      &::before,
+      &::after {
+          content: '';
+          position: absolute;
+          top: 10px;
+          display: block;
+          width: 24px;
+          height: 3px;
+          background: #ebe7e7;
+      }
+      &::before{
+        transform: rotate(45deg);
+      }
+      &::after{
+        transform: rotate(-45deg);
+      }
+    }
+
+    p {
+        color: white;
+        font-size: $text_p;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+}
+
+.remove_modal_menu {
+    display: none;
+}
+
+@media (max-width:480px) {
+    .modal_menu_box {
+      width: 100vw;
+    }
+}

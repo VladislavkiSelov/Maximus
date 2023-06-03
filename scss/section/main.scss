@@ -57,7 +57,7 @@
 @media (max-width:1000px) {
     .main_top_text {
         h1 {
-            font-size: $text_h1_1;
+            font-size: $text_h1_2;
             width: 510px;
             margin-bottom: 20px;
         }
@@ -100,4 +100,32 @@
             url(../img/background.png) 0 0 / cover no-repeat,
     }
 
+}
+
+@media (max-width:480px) {
+    .main_top_text {
+        h1 {
+            font-size: $text_h1_3;
+            text-align: center;
+            width: 320px;
+        }
+
+        &>h2 {
+            font-size: $text_h2_3;
+            text-align: center;
+            width: 320px;
+        }
+    }
+
+    .main_top {
+        background:
+            url(../img/bush_on_the_left.png) 0 100% / 10% auto no-repeat,
+            url(../img/bush_on_the_right.png) 100% 100% / 10% auto no-repeat,
+            url(../img/Clouds.png) 0 90% / 100% auto no-repeat,
+            url(../img/bird.png) 10% 10% / 100px auto no-repeat,
+            url(../img/Horse.png) 85% 80% / 35% auto no-repeat,
+            url(../img/barn.png) 25% 80% / 260px 115px no-repeat,
+            url(../img/Trees_on_the_left.png) 0 75% / 20% auto no-repeat,
+            url(../img/background.png) 0 0 / cover no-repeat,
+    }
 }
