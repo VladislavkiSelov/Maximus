@@ -317,3 +317,170 @@
         }
     }
 }
+
+.box_main_top_tb3 {
+    position: relative;
+
+    .wraper_img_girl_on_horse {
+        height: 350px;
+        width: auto;
+        position: absolute;
+        left: 0px;
+        bottom: 40px;
+        z-index: 6;
+    }
+
+    .wraper_img_boy_by_horse {
+        height: 342px;
+        width: auto;
+        position: absolute;
+        right: 0px;
+        bottom: 20px;
+        z-index: 6;
+    }
+
+    .wraper_img_clouds {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        z-index: 6;
+    }
+
+    background: url(../img/background_small.png) 100% 100%/ cover no-repeat;
+}
+
+.main_top_tb3 {
+    padding-bottom: 340px;
+
+    h2 {
+        padding-top: 100px;
+        font-size: $text_h2_big;
+        text-align: center;
+        margin-bottom: 110px;
+    }
+
+    .box_club_direction {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+
+        .bottom_block {
+            align-self: end;
+        }
+
+        .top_block {
+            align-self: start;
+        }
+
+        &>div {
+            position: relative;
+            background: rgb(255, 255, 255);
+            margin-bottom: 25px;
+            padding: 25px;
+            padding-top: 265px;
+            border-radius: 5px;
+
+            .cl_dir_img {
+                position: absolute;
+                top: -30px;
+                left: 25px;
+                right: 25px;
+                max-height: 240px;
+                max-width: 320px;
+                overflow: hidden;
+                border-radius: 10px;
+
+                img {
+                    width: 100%;
+                    transition-duration: 1s;
+
+                    &:hover {
+                        transform: scale(1.07);
+                    }
+                }
+            }
+
+            h3 {
+                text-align: center;
+                margin-bottom: 50px;
+                font-size: 23px;
+            }
+
+            p {
+                color: $color_four;
+                text-align: center;
+            }
+
+        }
+    }
+
+    .btn_record {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:1000px) {
+    .main_top_tb3 {
+        .box_club_direction {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            align-items: start;
+
+            .bottom_block {
+                align-self: stretch;
+            }
+
+            .top_block {
+                align-self: stretch;
+            }
+
+            &>div {
+                max-width: 370px;
+
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .box_main_top_tb3 {
+
+        .wraper_img_girl_on_horse {
+            height: 270px;
+            bottom: 0px;
+        }
+
+        .wraper_img_boy_by_horse {
+            height: 270px;
+            bottom: 0px;
+        }
+    }
+}
+
+
+@media (max-width:440px) {
+    .box_main_top_tb3 {
+
+        .wraper_img_girl_on_horse {
+            height: 200px;
+        }
+
+        .wraper_img_boy_by_horse {
+            height: 200px;
+        }
+    }
+
+    .main_top_tb3 {
+        .box_club_direction {
+            grid-template-columns: 1fr;
+
+            &>div {
+                max-width: 370px;
+            }
+        }
+    }
+}

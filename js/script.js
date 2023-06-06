@@ -22,3 +22,4 @@ btnMenu.addEventListener('click', () => {
 btnClose.addEventListener('click', () => {
     parentBlock.classList.add('remove_modal_menu')
 })
+
