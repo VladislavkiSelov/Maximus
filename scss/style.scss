@@ -1,3 +1,4 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import'./base/reset';
 @import'./base/variables';
 @import'./base/typography';
@@ -8,8 +9,13 @@
 @import'./components/button.scss';
 @import './components/modal_menu.scss';
 
+
 * {
     box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
 }
 
 body {

@@ -14,7 +14,7 @@
         url(../img/Horse_small.png) 50% 90% / 10% auto no-repeat,
         url(../img/barn.png) 25% 95% / 22% auto no-repeat,
         url(../img/Trees_on_the_left.png) 0 90% / 20% auto no-repeat,
-        url(../img/background.png) 0 0 / cover no-repeat,
+        url(../img/background.png) left 0px bottom 0px / cover no-repeat,
 }
 
 .main_top_text {
@@ -772,4 +772,19 @@
     .box_map {
         margin-bottom: 300px;
     }
+}
+
+.carousel {
+    height: 700px;
+    width: 100vw;
+    overflow: hidden;
+
+    .carousel-inner {
+        img {
+            object-fit: contain;
+            display: block;
+        }
+    }
+
+    margin-bottom: 100px;
 }

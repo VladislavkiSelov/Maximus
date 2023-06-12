@@ -1,4 +1,5 @@
 import '../scss/style.scss'
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js'
 const blockHeader = document.querySelector('header')
 const categoryList = document.querySelector('.list_category')
 const categoryListAllLi = Array.from(categoryList.querySelectorAll('li'))
@@ -22,4 +23,3 @@ btnMenu.addEventListener('click', () => {
 btnClose.addEventListener('click', () => {
     parentBlock.classList.add('remove_modal_menu')
 })
-
