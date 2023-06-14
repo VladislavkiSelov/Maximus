@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https: //VladislavkiSelov.github.io/Maximus",
+  "homepage": "https://VladislavkiSelov.github.io/Maximus",
   "scripts": {
     "build": "webpack",
     "start": "webpack --watch",
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/VladislavkiSelov/Maximus/issues"
   },
-  "homepage": "https://github.com/VladislavkiSelov/Maximus#readme",
+  "homepage2": "https://github.com/VladislavkiSelov/Maximus#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "clean-webpack-plugin": "^4.0.0",
